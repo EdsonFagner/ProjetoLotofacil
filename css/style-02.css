@@ -1,0 +1,1385 @@
+/*Definindo que todos os elementos tenham seu tamanho original ao alterar padding ou margin*/
+* {
+    box-sizing: border-box;
+}
+
+/*Corpo da página*/
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+                                                                    /*CABEÇALHO DA PÁGINA*/
+/***********************************************************************************************************************************************/
+
+/*Cabeçalho do programa*/
+header {
+    margin: 0px;
+    width:100%;
+    height: 100px;
+    display:flex;
+    position: fixed;
+    border-bottom: 1px solid #CCC;
+    box-shadow: 0px 0px 5px #AAA;
+    background-color: white;
+}
+
+/*Divisão de espaço*/
+.area-head-1 {
+    width: 50%;
+}
+/*Divisão de espaço 2*/
+.area-head-2 {
+    width: 50%;
+}
+
+/*Espaço do logotipo*/
+.area-logo{
+    display: flex;
+    justify-content: flex-start;
+    width:30%;
+    height:75px;
+}
+
+/*Icone logotipo*/
+.logo {
+    width:40%;
+}
+
+/*Texto logotipo*/
+.texto-logo {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #00a85a;
+}
+
+/*Area do usuario*/
+.area-usuario {
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Icone usuario*/
+.icone-usuario {
+    width: 16%;
+}
+
+/*ao passar o mouse no icone do usuario*/
+.icone-usuario:hover {
+    width: 15%;
+    height: 93px;
+    padding-right: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+/*Texto do usuario*/
+.texto-usuario {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #00a85a;
+    margin-right:20px;
+    margin-top: 60px;
+}
+
+/*Ao passar o mouse no texto ao lado do usuário*/
+.texto-usuario:hover {
+    color: #4ad695;
+    cursor: pointer;
+}
+
+                                                                    /*MENU DE NAVEGAÇÃO*/
+/***********************************************************************************************************************************************/
+
+/*Area de navegação*/
+nav {
+    display: flex;;
+}
+
+/*Area do menu*/
+.menu-area {
+    width:20%;
+    height: 532px;
+    border-right: 1px solid #CCC;
+    box-shadow: 1px 0px 5px #AAA;
+    margin-top: 100px;
+    position: fixed;
+
+}
+
+/*Botão resultados*/
+.resultados {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00a85a;
+    border-bottom: 1px solid #4ad695;
+}
+
+/*Ao passar o mouse pelo botão*/
+.resultados:hover {
+    background-color: #4ad695;
+    cursor: pointer;
+    border-right: 5px solid purple;
+    border-bottom: 1px solid #00a85a;
+}
+
+/*Icone ao lado do botão*/
+.icone-resultados {
+    width: 15%;
+    margin-right: 3px;
+}
+
+/*Texto do botão*/
+.texto-resultados {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/*Botão lotofacil*/
+.lotofacil {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00a85a;
+    border-bottom: 1px solid #4ad695;
+}
+
+/*Ao passar o mouse pelo botão*/
+.lotofacil:hover {
+    background-color: #4ad695;
+    cursor: pointer;
+    border-right: 5px solid purple;
+    border-bottom: 1px solid #00a85a;
+}
+
+/*Icone ao lado do botão*/
+.icone-loto {
+    width: 10%;
+    margin-right: 3px;
+}
+
+/*Texto do botão*/
+.texto-loto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*Sub menu da opção lotofacil*/
+.sub-menu-lotofacil {
+    display:none;
+    background-color: blueviolet;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Categorias do sub-menu*/
+.erre4, .erre5, .erre7, .quentes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+
+    font-style: italic;
+    color: white;
+    border-bottom: 1px solid rgb(169, 110, 224);
+}
+
+/*Icone dos botões erre*/
+.icone-erre4 {
+    width: 7%;
+    margin-left: 5px;
+}
+
+.icone-erre5 {
+    width: 6%;
+    margin-left: 5px;
+}
+
+.icone-erre7 {
+    width: 6%;
+    margin-left: 5px;
+}
+
+/*Ao passar o mouse pelas categorias*/
+.erre4:hover, .erre5:hover, .erre7:hover, .quentes:hover {
+    cursor: pointer;
+    border-right: 5px solid #00a85a;
+    background-color: rgb(169, 110, 224);
+    border-bottom: 1px solid blueviolet;
+}
+
+/*Botão videos*/
+.videos {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00a85a;
+    border-bottom: 1px solid #4ad695;
+}
+
+/*Ao passar o mouse pelo botão*/
+.videos:hover {
+    background-color: #4ad695;
+    cursor: pointer;
+    border-right: 5px solid purple;
+    border-bottom: 1px solid #00a85a;
+}
+
+/*Icone ao lado do botão videos*/
+.icone-videos {
+    width: 9%;
+    margin-right: 3px;
+}
+
+/*Texto dentro do botão videos*/
+.texto-videos {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+                                                                /*ESPAÇO DE NAVEGAÇÃO GENERICO*/
+/***********************************************************************************************************************************************/
+
+/*Area de navegação entre opcões*/
+.area-de-navegacao {
+    width:80%;
+    height: 532px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+}
+                                                                /*ESPAÇO DE NAVEGAÇÃO INICIAL*/
+/***********************************************************************************************************************************************/
+.nav-resultados {
+    /*Setar display flex quando clicar no botão*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 532px;
+}
+
+/*Linha 1 navegação erre4*/
+.nav-resultados-l1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 266px;
+}
+
+
+/*Título resultado*/
+.titulo-resultado {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: purple;
+    margin-left: 50px;
+}
+
+/*Data resultado*/
+.data-resultado {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #CCC;
+    margin-left: 50px;
+}
+
+/*Valor do resultado*/
+.valor-resultado {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin-left: 50px;
+}
+
+
+/***************************************************linha 1 bloco 1 navegação resultados*******************************************************/
+.nav-resultados-l1-b1 {
+    width: 50%;
+    height: 266px;
+}
+
+/*botão apostas*/
+.btn-apostas {
+    height: 100px;
+    width: 80%;
+    background-color: purple;
+    margin-top: 20px;
+    margin-left: 10%;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 1px 0px 5px black;
+}
+
+/*Ao clicar no botão apostas*/
+.btn-apostas:hover {
+    background-color: rgb(163, 72, 163);
+    cursor: pointer;
+}
+
+/*icone botão apostas*/
+.icone-aposta {
+    width: 9%;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+/*texto do botão apostas*/
+.texto-aposta {
+    margin-left: 35px;
+}
+
+/***************************************************linha 1 bloco 2 navegação resultados*******************************************************/
+.nav-resultados-l1-b2 {
+    width: 50%;
+    height: 266px;
+}
+
+/*Linha 2 navegação resultados*/
+.nav-resultados-l2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 266px;
+}
+
+.ultimo-resultado {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.numero-resultado {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.tabela-ultimo-resultado {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.tb-rs-l1 {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.tb-rs-l1 div {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0px 5px black;
+}
+
+.tb-rs-l2 {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tb-rs-l2 div {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0px 5px black;
+}
+
+.tb-rs-l3 {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tb-rs-l3 div {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0px 5px black;
+}
+
+
+/***************************************************linha 2 bloco 1 navegação resultados*******************************************************/
+.nav-resultados-l2-b1 {
+    width: 50%;
+    height: 266px;
+}
+
+.dezena-quente {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+    margin-left: 50px;
+}
+
+.tabela-dezena-quente {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.tb-dq-l1 {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.tb-dq-l1 div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0px 5px black;
+}
+
+.tb-dq-l2 {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.tb-dq-l2 div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0px 5px black;
+}
+
+
+/***************************************************linha 2 bloco 2 navegação resultados*******************************************************/
+.nav-resultados-l2-b2 {
+    width: 50%;
+    height: 266px;
+}
+
+.tabela-valor {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.tb-tv-l1, .tb-tv-l2, .tb-tv-l3, .tb-tv-l4, .tb-tv-l5 {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tb-tv-l1 div, .tb-tv-l2 div, .tb-tv-l3 div, .tb-tv-l4 div, .tb-tv-l5 div {
+    font-weight: bold;
+}
+
+
+
+                                                            /*ESPAÇO DE NAVEGAÇÃO DO ERRE*/
+/***********************************************************************************************************************************************/
+/*Area de navegação erre*/
+.nav-erre {
+    /*Setar display flex quando clicar no botão*/
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 532px;
+}
+
+.nav-erre-l1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 266px;
+}
+
+.nav-erre-l2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 266px;
+}
+
+/***************************************************linha 1 bloco 1 navegação erre*************************************************************/
+.nav-erre-l1-b1 {
+    width: 50%;
+    height: 266px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-erre4 {
+    border-radius: 5px;
+    background: #FFFF00;
+    width: 75%;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.btn-erre4:hover {
+    background-color: rgb(255, 255, 85);
+    cursor: pointer;
+    border: 2px solid #CCC;
+    padding: 5px;
+}
+
+.texto-erre4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 52px;
+    color: white;
+    text-shadow: -5px 2px 5px black;
+}
+
+.icone-erre4 {
+    width: 10%;
+    margin-left:20px;
+}
+
+/***************************************************linha 1 bloco 2 navegação erre*************************************************************/
+.nav-erre-l1-b2 {
+    width: 50%;
+    height: 266px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-erre5 {
+    border-radius: 5px;
+    background: #FF8C00;
+    width: 75%;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.btn-erre5:hover {
+    background-color: #FFA500;
+    cursor: pointer;
+    border: 2px solid #CCC;
+    padding: 5px;
+}
+
+.texto-erre5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 52px;
+    color: white;
+    text-shadow: -5px 2px 5px black;
+}
+
+.icone-erre5 {
+    width: 10%;
+    margin-left:20px;
+}
+
+
+/***************************************************linha 2 bloco 1 navegação erre*************************************************************/
+.nav-erre-l2-b1 {
+    width: 50%;
+    height: 266px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-erre7 {
+    border-radius: 5px;
+    background: #0000CD;
+    width: 75%;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.btn-erre7:hover {
+    background-color: #4169E1;
+    cursor: pointer;
+    border: 2px solid #CCC;
+    padding: 5px;
+}
+
+.texto-erre7 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 52px;
+    color: white;
+    text-shadow: -5px 2px 5px black;
+}
+
+.icone-erre7 {
+    width: 10%;
+    margin-left:20px;
+}
+
+/***************************************************linha 2 bloco 2 navegação erre*************************************************************/
+
+.nav-erre-l2-b2 {
+    width: 50%;
+    height: 266px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-jogo-quente {
+    border-radius: 5px;
+    background: #FF0000;
+    width: 80%;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.btn-jogo-quente:hover {
+    background-color: #FF6347;
+    cursor: pointer;
+    border: 2px solid #CCC;
+    padding: 5px;
+}
+
+.texto-jogo-quente {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 52px;
+    color: white;
+    text-shadow: -5px 2px 5px black;
+}
+
+                                                            /*ESPAÇO NAVEGAÇÃO VIDEOS*/
+/***********************************************************************************************************************************************/
+.nav-videos {
+    /*Setar display flex quando clicar no botão*/
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 532px;
+}
+/*Linha 1 navegação videos*/
+.nav-videos-l1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 266px;
+    border-bottom: 1px solid #CCC;
+}
+
+/*linha 1 bloco 1 navegação videos*/
+.nav-videos-l1-b1 {
+    width: 50%;
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-vd-l1-b1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7B68EE;
+}
+
+/*linha 1 bloco 2 navegação videos*/
+.nav-videos-l1-b2 {
+    width: 50%;
+    height: 266px;
+    border-left: 2px solid #CCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-vd-l1-b2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7B68EE;
+}
+
+/*Linha 2 navegação videos*/
+.nav-videos-l2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 266px;
+}
+
+/*linha 2 bloco 1 navegação videos*/
+.nav-videos-l2-b1 {
+    width: 50%;
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-vd-l2-b1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7B68EE;
+}
+
+/*linha 2 bloco 2 navegação videos*/
+.nav-videos-l2-b2 {
+    width: 50%;
+    height: 266px;
+    border-left: 2px solid #CCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-vd-l2-b2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7B68EE;
+}
+
+                                                            /*ESPAÇO NAVEGAÇÃO ERRE4*/
+/**********************************************************************************************************************************************/
+
+.nav-erre4{
+    height: 532px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+/***************************************************linha 1 navegação erre 4*******************************************************************/
+.nav-erre4-l1 {
+    height: 266px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-texto-aposta-erre4 {
+    height: 60px;
+    width: 100%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-aposta-erre4 {
+    color: white;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0px 0px 5px black;
+}
+
+.area-tabela-erre4 {
+    width: 50%;
+    height: 206px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-tabela-erre4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 40px;
+    color: #AAA;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.tabela-erre4 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tb-4-l1, .tb-4-l2 {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.tb-4-l3 {
+    width: 56.66%;
+    height: 60px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.tb-4-l1 div, .tb-4-l2 div {
+    height: 45px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid purple;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.tb-4-l1 div:hover, .tb-4-l2 div:hover {
+    cursor: pointer;
+    background-color: #7B68EE;
+    border: 0px;
+}
+
+.tb-4-l3 div {
+    height: 45px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid purple;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.tb-4-l3 div:hover {
+    cursor: pointer;
+    background-color: #7B68EE;
+    border: 0px;
+}
+
+.tb-4-l1 div p, .tb-4-l2 div p, .tb-4-l3 div p {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 5px #CCC;
+    color: purple;
+    font-size: 20px;
+}
+
+/***************************************************linha 2 navegação erre 4*******************************************************************/
+.nav-erre4-l2 {
+    height: 266px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gerar-aposta-erre4 {
+    height: 60px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+
+.gerar-aposta-erre4:hover {
+    background-color: #7B68EE;
+    cursor: pointer;
+}
+
+.texto-gerar-aposta-erre4 {
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 5px black;
+}
+
+.icone-gerar-aposta-erre4 {
+    width: 9%;
+    height: 30px;
+    margin-right: 10px;
+}
+
+                                                            /*ESPAÇO NAVEGAÇÃO ERRE5*/
+/***********************************************************************************************************************************************/
+
+.nav-erre5{
+    height: 532px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+/***************************************************linha 1 navegação erre 4*******************************************************************/
+.nav-erre5-l1 {
+    height: 376px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-texto-aposta-erre5 {
+    height: 60px;
+    width: 100%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-aposta-erre5 {
+    color: white;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0px 0px 5px black;
+}
+
+.area-tabela-erre5 {
+    width: 50%;
+    height: 316px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-tabela-erre5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 40px;
+    color: #AAA;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.tabela-erre5 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tb-5-l1, .tb-5-l2, .tb-5-l3, .tb-5-l4, .tb-5-l5 {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+
+.tb-5-l1 div, .tb-5-l2 div, .tb-5-l3 div, .tb-5-l4 div, .tb-5-l5 div {
+    height: 45px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid purple;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.tb-5-l1 div:hover, .tb-5-l2 div:hover, .tb-5-l3 div:hover, .tb-5-l4 div:hover, .tb-5-l5 div:hover {
+    cursor: pointer;
+    background-color: #7B68EE;
+    border: 0px;
+}
+
+.tb-5-l1 div p, .tb-5-l2 div p, .tb-5-l3 div p, .tb-5-l4 div p, .tb-5-l5 div p {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 5px #CCC;
+    color: purple;
+    font-size: 20px;
+}
+
+/***************************************************linha 2 navegação erre 5*******************************************************************/
+.nav-erre5-l2 {
+    height: 156px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gerar-aposta-erre5 {
+    height: 60px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+
+.gerar-aposta-erre5:hover {
+    background-color: #7B68EE;
+    cursor: pointer;
+}
+
+.texto-gerar-aposta-erre5 {
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 5px black;
+}
+
+.icone-gerar-aposta-erre5 {
+    width: 9%;
+    height: 30px;
+    margin-right: 10px;
+}
+
+                                                            /*ESPAÇO NAVEGAÇÃO ERRE7*/
+/***********************************************************************************************************************************************/
+.nav-erre7{
+    height: 532px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+/***************************************************linha 1 navegação erre 7*******************************************************************/
+.nav-erre7-l1 {
+    height: 376px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-texto-aposta-erre7 {
+    height: 60px;
+    width: 100%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-aposta-erre7 {
+    color: white;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0px 0px 5px black;
+}
+
+.area-tabela-erre7 {
+    width: 50%;
+    height: 316px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-tabela-erre7 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 40px;
+    color: #AAA;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.tabela-erre7 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tb-7-l1, .tb-7-l2, .tb-7-l3, .tb-7-l4, .tb-7-l5 {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+
+.tb-7-l1 div, .tb-7-l2 div, .tb-7-l3 div, .tb-7-l4 div, .tb-7-l5 div {
+    height: 45px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid purple;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.tb-7-l1 div:hover, .tb-7-l2 div:hover, .tb-7-l3 div:hover, .tb-7-l4 div:hover, .tb-7-l5 div:hover {
+    cursor: pointer;
+    background-color: #7B68EE;
+    border: 0px;
+}
+
+.tb-7-l1 div p, .tb-7-l2 div p, .tb-7-l3 div p, .tb-7-l4 div p, .tb-7-l5 div p {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 5px #CCC;
+    color: purple;
+    font-size: 20px;
+}
+
+/***************************************************linha 2 navegação erre 7*******************************************************************/
+.nav-erre7-l2 {
+    height: 156px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gerar-aposta-erre7 {
+    height: 60px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+
+.gerar-aposta-erre7:hover {
+    background-color: #7B68EE;
+    cursor: pointer;
+}
+
+.texto-gerar-aposta-erre7 {
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 5px black;
+}
+
+.icone-gerar-aposta-erre7 {
+    width: 9%;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+                                                            /*ESPAÇO NAVEGAÇÃO JOGOS QUENTES*/
+/***********************************************************************************************************************************************/
+.nav-jogo-quente {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 532px;
+}
+
+/***************************************************linha 1 navegação jogos quentes************************************************************/
+
+.nav-jogo-quente-l1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 366px;
+}
+
+.area-texto-jogo-quente {
+    height: 60px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-aposta-jogo-quente {
+    color: white;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0px 0px 5px black;
+}
+
+.area-tabela-jogo-quente {
+    width: 50%;
+    height: 316px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-tabela-jogo-quente {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 40px;
+    color: #AAA;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.tabela-jogo-quente {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tb-jg-l1, .tb-jg-l2, .tb-jg-l3, .tb-jg-l4, .tb-jg-l5 {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+
+.tb-jg-l1 div, .tb-jg-l2 div, .tb-jg-l3 div, .tb-jg-l4 div, .tb-jg-l5 div {
+    height: 45px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px #CCC;
+}
+
+.tb-jg-l1 div p, .tb-jg-l2 div p, .tb-jg-l3 div p, .tb-jg-l4 div p, .tb-jg-l5 div p {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 5px #CCC;
+    color: red;
+    font-size: 20px;
+}
+
+/***************************************************linha 2 navegação jogos quentes*******************************************************************/
+
+.nav-jogo-quente-l2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 166px;
+}
+
+.gerar-aposta-jogo-quente {
+    height: 60px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.gerar-aposta-jogo-quente:hover {
+    background-color: #B22222;
+    cursor: pointer;
+}
+
+.texto-gerar-aposta-jogo-quente {
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 5px black;
+}
+
+.icone-gerar-aposta-jogo-quente {
+    width: 9%;
+    height: 30px;
+    margin-right: 10px;
+}
+

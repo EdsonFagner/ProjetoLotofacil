@@ -1,0 +1,260 @@
+/*Definindo que todos os elementos tenham seu tamanho original ao alterar padding ou margin*/
+* {
+    box-sizing: border-box;
+}
+/*Corpo da página*/
+body {
+    margin: 0px;
+    background-color: white;
+}
+
+/*area do logotipo*/
+.arealogo {
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Logotipo*/
+.logo {
+    width: 30%;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/*Imagem logotipo*/
+.img1 {
+    width:30%
+}
+
+/*Corpo da página*/
+.corpo{
+    width:100%;
+    height:500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Formulário da página*/
+form {
+    width: 35%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 5px #CCC;
+}
+
+/*Espaço do usuário*/
+lb-usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Caixa de inserção do usuário*/
+.usuario {
+    height: 68%;
+    width: 95%;
+    margin-left: 5%;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    box-shadow: 0px 0px 5px #AAA;
+    text-align: center;
+}
+
+/*Ao passar o mouse sobre a caixa de inserção do usuário*/
+.usuario:hover {
+    cursor: pointer;
+}
+
+/*Espaço da senha*/
+lb-senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/*Caixa de inserção da senha*/
+.senha {
+    height: 50%;
+    width: 95%;
+    margin-left: 5%;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    box-shadow: 0px 0px 5px #AAA;
+    text-align: center;
+}
+
+/*Ao passar o mouse sobre a caixa de inserção de senha*/
+.senha:hover {
+    cursor:pointer;
+}
+
+/*Link esqueci a senha*/
+.e-senha {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+
+/*Ao passar o mouse por cima do link*/
+.e-senha:hover {
+    text-decoration: underline;
+}
+
+/*Botão de envio do formulário*/
+.btn-login {
+    height: 100px;
+    width: 100px;
+    border-radius: 75px;
+    background-color: #00a85a;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #CCC;
+}
+
+/*Ao passar o mouse por cima do botão de envio*/
+.btn-login:hover {
+    cursor:pointer;
+    background-color: #4cd495;
+}
+
+/*Rodapé da página*/
+.rodape {
+    width:100%;
+    height: 100px;
+    background-color: white;
+}
+
+
+/*Texto de aviso do rodapé*/
+.texto-rodape {
+    height: 70px;
+    font-size: 12px;
+    text-align: center;
+    margin:0;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Area dos links de termos e politicas*/
+.termos {
+    width:100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*texto termos*/
+.texto-tu {
+    color:black;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Ao passar o mouse por cima dos temos*/
+.texto-tu:hover {
+    text-decoration: underline;
+}
+
+/*texto políticas*/
+.texto-pp {
+    margin-left: 10px;
+    color:black;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Ao passar o mouse em politicas*/
+.texto-pp:hover {
+    text-decoration: underline;
+}
+
+/*Ao passar o mouse no simbolo*/
+.simbolo:hover {
+    cursor: pointer;
+}
+
+/*Definindo parametros de resolução da tela com 1200px*/
+@media only screen and (min-width:801px) and (max-width:1200px) {
+    form {
+        width: 55%;
+    }
+    .usuario, .senha {
+        margin-left: 2.5%;
+    }
+    .texto-rodape {
+        font-size: 10px;
+        padding:0px;
+    }
+    .texto-tu, .texto-pp {
+        font-size: 9px;
+    }
+
+}
+
+/*Definindo parametros de resolução da tela com 800px*/
+@media only screen and (min-width:500px) and (max-width: 800px){
+    form {
+        width: 55%;
+    }
+    .usuario, .senha {
+        margin-left: 2.5%;
+    }
+    .texto-rodape {
+        font-size: 10px;
+        padding:0px;
+    }
+    .texto-tu, .texto-pp {
+        font-size: 9px;
+    }
+}
+
+/*Definindo parametros de resolução da tela com 550px*/
+@media only screen and (max-width: 550px) {  
+    form {
+        width:75%;
+    }
+    .texto-rodape {
+        font-size: 8px;
+    }
+    .texto-tu, .texto-pp {
+        font-size: 7px;
+        margin-top:10px;
+    }
+}

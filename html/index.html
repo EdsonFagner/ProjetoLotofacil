@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <!--Cabeçalho do programa-->
+    <head>
+        <!--Definindo tipo de entrada do teclado-->
+        <meta charset="utf-8" />
+        <!--Título da página-->
+        <title>LotoApostas</title>
+        <!--Conexão com CSS-->
+        <link rel="stylesheet" href="../css/style.css" />
+        <!--Integração de reponsividade com aparelho mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Importação de fontes-->        
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <!--Corpo do programa-->
+    <body>
+        <!--Cabeçalho da página-->
+        <header>
+            <!--Area de edição logo-->
+            <div class="arealogo">
+                <!--Logotipo do site-->
+                <div class="logo">
+                    <img class="img1" src="../images/logo.png"/>
+                </div>
+            </div>
+        </header>
+        <!--Area do corpo da pagina-->
+        <div class="corpo">
+            <!--Formulário da página-->
+            <form method="POST">
+                <!--Espaço do usuário-->
+                <label class="lb-usuario">
+                    <!--Caixa de inserção do usuário-->
+                    <input class="usuario" type="email" name="email" placeholder="USUÁRIO" autocomplete="off" required/>
+                </label>
+                <!--Espaço da senha-->
+                <label class="lb-senha">
+                    <!--Caixa de inserção da senha-->
+                    <input class="senha" type="password" name="senha" placeholder="SENHA" autocomplete="off" required/>
+                </label>
+                <!--Link de acesso para redefinição da senha-->
+                <a class="e-senha" href="#">Esqueceu sua senha?</a>
+                <!--Botão de envio do formulário-->
+                <button type="submit" class="btn-login">Entrar</button>
+            </form>
+        </div>
+        <!--Rodapé da página-->
+        <footer>
+            <!--Area do rodapé-->
+            <div class="rodape">
+                <!--Texto de aviso do rodapé-->
+                <div class="texto-rodape"><b>Atenção:</b> Ao abordar questões financeiras fazemos todos os esforços para garantir que estes representem fielmente nosso produto. No entanto não garantimos que você conseguirá obter quaisquer resultados ou ganhar dinheiro usando qualquer uma de nossas ideias, ferramentas, estratégias e recomendações e nada em nossos site é uma promessa ou garantia para você de ganhos futuros.</div>
+                <!--Area destinada aos links de termos de uso e politica de privacidade-->
+                <div class="termos">
+                    <!--link de redirecionamento para os termos de uso-->
+                    <a class="texto-tu" href="#">Termos de uso</a>
+                    <!--Link para redirecionamento da política de privacidade-->
+                    <a class="texto-pp" href="#">Política de privacidade</a>
+                </div>              
+            </div>
+        </footer>
+        <!--link de conexão com o script da página-->
+        <script type="text/javascript" src="../js/script.js"></script>
+    </body>
+</html>
